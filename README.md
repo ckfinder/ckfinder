@@ -9,6 +9,10 @@ Use the [Issues](https://github.com/ckfinder/ckfinder/issues) link on the right 
 
 If you are unsure what information to provide when reporting a bug, check [Reporting Issues](http://docs.cksource.com/ckfinder3/#!/guide/dev_issues_readme).
 
+## Translations
+
+In order to submit translations for CKFinder please use the 
+[ckfinder-translations](https://github.com/ckfinder/ckfinder-translations) repository. 
 
 ## Documentation
 
@@ -35,11 +39,6 @@ This website contains documentation about the PHP connector for CKFinder 3 and i
  * Enabling the PHP connector.
  * Configuring the PHP connector.
  * Tutorials about creating PHP plugins.
-
-## Translations
-
-In order to submit translations for CKFinder please use the 
-[ckfinder-translations](https://github.com/ckfinder/ckfinder-translations) repository. 
 
 ## License
 
