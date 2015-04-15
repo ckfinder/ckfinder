@@ -1,6 +1,6 @@
 # CKFinder 3
 
-This repository contains a public bug tracker for **CKFinder 3**.
+This repository contains a public issue tracker for **CKFinder 3**.
 
 ## Feedback
 
