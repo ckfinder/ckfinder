@@ -7,6 +7,9 @@ This repository contains a public issue tracker for **CKFinder 3**.
 Use the [Issues](https://github.com/ckfinder/ckfinder/issues) link on the right side to report issues in CKFinder 3 
 (and its documentation) or submit feature requests.
 
+If you are unsure what information to provide when reporting a bug, check [Reporting Issues](http://docs.cksource.com/ckfinder3/#!/guide/dev_issues_readme).
+
+
 ## Documentation
 
 CKFinder is made from two parts: the client side part and the server side connector(s).
