@@ -16,25 +16,25 @@ In order to submit translations for CKFinder please use the
 
 ## Documentation
 
-CKFinder is made from two parts: the client side part and the server side connector(s).
+CKFinder is composed of two parts: the client-side part and the server-side connector(s).
 
-The client side part is common across all distributions (PHP and ASP.NET, Java in the future), while
-the server side parts are different for each language, that's why there are multiple documentation websites available. 
+The client-side part is written in JavaScript and is common across all distributions (PHP and ASP.NET, Java in the future), while
+the server-side parts are different for each language. There are thus multiple CKFinder 3 documentation websites available. 
 
 [CKFinder 3 Documentation](http://docs.cksource.com/ckfinder3/)
  
-This website contains documentation about the client side part of CKFinder, common for all versions of CKFinder 3
-and includes information about:
+This website contains documentation for the JavaScript, client-side part of CKFinder which is common for all versions of CKFinder 3.
+It includes information about:
 
  * Integrating CKFinder with your website or with CKEditor.
- * Client side configuration options.
+ * Client-side configuration options.
  * API documentation.
  * Tutorials about creating JavaScript plugins.
  * Tutorials about creating skins. 
 
 [CKFinder 3 for PHP Documentation](http://docs.cksource.com/ckfinder3-php/)
 
-This website contains documentation about the PHP connector for CKFinder 3 and includes information about:
+This website contains documentation for the PHP connector of CKFinder 3 and includes information about:
 
  * Enabling the PHP connector.
  * Configuring the PHP connector.
