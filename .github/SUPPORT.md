@@ -16,9 +16,6 @@ software or your customizations.
 [Professional Support Channel](https://ckeditor.com/contact/) – a dedicated channel for users with active licenses
 for CKFinder.
 
-For more advanced needs (e.g. development of customized plugins and features), you can get access to CKFinder
-core developers through [Custom Development](https://cksource.com/ckfinder/services) service.
-
 
 ## Documentation & Examples
 
