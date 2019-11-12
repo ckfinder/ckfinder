@@ -48,6 +48,13 @@ This website contains documentation for the ASP.NET connector of CKFinder 3 and 
  * Configuring the ASP.NET connector.
  * Tutorials about creating ASP.NET plugins.
 
+[CKFinder 3 for Java Documentation](https://ckeditor.com/docs/ckfinder/ckfinder3-java/)
+
+This website contains documentation for the Java connector of CKFinder 3 and includes information about:
+
+ * Enabling the Java connector.
+ * Configuring the Java connector.
+ * Tutorials about creating Java plugins.
 
 ## License
 
