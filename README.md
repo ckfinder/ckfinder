@@ -58,6 +58,6 @@ This website contains documentation for the Java connector of CKFinder 3 and inc
 
 ## License
 
-Copyright (C) 2007-2015, CKSource - Frederico Knabben. All rights reserved.
+Copyright (C) 2007-2019, CKSource - Frederico Knabben. All rights reserved.
 
 To purchase a license for CKFinder visit the [CKFinder website](https://ckeditor.com/ckeditor-4/ckfinder/).
