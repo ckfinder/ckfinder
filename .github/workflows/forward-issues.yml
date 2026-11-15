@@ -1,0 +1,33 @@
+# Copy to ckfinder/ckfinder as .github/workflows/forward-issues.yml
+# No sync logic here: it only tells the private repo which issue changed.
+name: Forward issues
+
+on:
+  issues:
+    types: [opened, assigned, unassigned, labeled, unlabeled, reopened]
+
+permissions: {}
+
+jobs:
+  forward:
+    # Issues and changes made by the bot came from the private repo, no need to send them back.
+    if: github.event.issue.user.type != 'Bot' && github.event.sender.type != 'Bot'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/create-github-app-token@v3
+        id: token
+        with:
+          client-id: ${{ vars.ISSUES_FORWARDER_CLIENT_ID }}
+          private-key: ${{ secrets.ISSUES_FORWARDER_PRIVATE_KEY }}
+          owner: ${{ vars.ISSUES_FORWARDER_TARGET_OWNER || 'cksource' }}
+          repositories: ${{ vars.ISSUES_FORWARDER_TARGET_REPO || 'ckfinder' }}
+
+      - name: Start sync workflow in private repo
+        env:
+          GH_TOKEN: ${{ steps.token.outputs.token }}
+          ACTION: ${{ github.event.action }}
+          NUMBER: ${{ github.event.issue.number }}
+          TARGET: ${{ vars.ISSUES_FORWARDER_TARGET_OWNER || 'cksource' }}/${{ vars.ISSUES_FORWARDER_TARGET_REPO || 'ckfinder' }}
+          REF: ${{ vars.ISSUES_FORWARDER_TARGET_REF || 'master' }}
+        # --ref is set by hand: without it gh looks up the default branch, which needs Contents permission.
+        run: gh workflow run issues-sync.yml --repo "$TARGET" --ref "$REF" -f "action=$ACTION" -f "number=$NUMBER"
